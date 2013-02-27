@@ -1,0 +1,153 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+@font-face {
+	font-family: 'Ostrich';
+	src: url('../webfonts/ostrich-regular-webfont.eot');
+	src: url('../webfonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-regular-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-regular-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-regular-webfont.svg#Ostrich') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OstrichBold';
+	src: url('../webfonts/ostrich-bold-webfont.eot');
+	src: url('../webfonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-bold-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-bold-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-bold-webfont.svg#OstrichBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichBlack';
+	src: url('../webfonts/ostrich-black-webfont.eot');
+	src: url('../webfonts/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-black-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-black-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-black-webfont.svg#OstrichBlack') format('svg');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichItalic';
+	src: url('../webfonts/ostrich-italic-webfont.eot');
+	src: url('../webfonts/ostrich-italic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-italic-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-italic-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-italic-webfont.svg#OstrichItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'OstrichLight';
+	src: url('../webfonts/ostrich-light-webfont.eot');
+	src: url('../webfonts/ostrich-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-light-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-light-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-light-webfont.svg#OstrichLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OstrichRounded';
+	src: url('../webfonts/ostrich-rounded-webfont.eot');
+	src: url('../webfonts/ostrich-rounded-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-rounded-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-rounded-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-rounded-webfont.svg#OstrichRounded') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OstrichDashed';
+	src: url('../webfonts/ostrich-dashed-webfont.eot');
+	src: url('../webfonts/ostrich-dashed-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/ostrich-dashed-webfont.woff') format('woff'),
+		url('../webfonts/ostrich-dashed-webfont.ttf') format('truetype'),
+		url('../webfonts/ostrich-dashed-webfont.svg#OstrichDashed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Global */
+body{
+	font-family: 'Courier';
+	text-align: center;
+}
+h1,h2,h3{
+	font-family: 'OstrichRounded';
+}
+h1{
+	font-size: 80px;
+	text-align: center;
+}
+
+h2{
+	font-size: 60px;
+}
+
+h3{
+	font-size:40px;
+}
+
+/* Specific */
+
+#holder { border: 10px dashed #ccc; width: 800px; min-height: 300px; margin: 10px auto;}
+#holder h3{line-height:300px; text-align:center; }
+#holder.hover { border: 10px dashed #0c0; }
+#holder img { display: block; margin: 10px auto; }
+#holder p { margin: 10px; font-size: 14px; }
+progress { width: 100%; }
+progress:after { content: '%'; }
+.fail { background: #c00; padding: 2px; color: #fff; }
+.hidden { display: none !important;}
